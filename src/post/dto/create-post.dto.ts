@@ -1,6 +1,4 @@
-import { PartialType, OmitType } from '@nestjs/mapped-types';
+import { OmitType } from '@nestjs/mapped-types';
 import { PostDto } from './post.dto';
 
-export class CreatePostDto extends OmitType(PostDto, 
-    ["id", "createdAt"] as const
-    ){}
+export class CreatePostDto extends OmitType(PostDto, ['id', 'createdAT']) {}
