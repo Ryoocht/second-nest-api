@@ -11,6 +11,7 @@ export class AuthController {
     return this.authService.signup(dto);
   }
 
+  // customise http status using enum
   @HttpCode(HttpStatus.OK)
   @Post('signin')
   signin(@Body() dto: AuthDto) {
